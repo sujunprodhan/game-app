@@ -51,7 +51,7 @@ const Navbar = () => {
           Login
         </button>
 
-        {/* ✅ Hamburger */}
+        {/*  Hamburger */}
         <MenuIcon className="md:hidden w-6 h-6 cursor-pointer" onClick={() => setIsOpen(true)} />
       </div>
 
@@ -61,7 +61,7 @@ const Navbar = () => {
           isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
       >
-        {/*  X Icon (Perfect position) */}
+        {/*  X Icon */}
         <X
           className="absolute top-6 right-6 w-8 h-8 text-white cursor-pointer"
           onClick={() => setIsOpen(false)}

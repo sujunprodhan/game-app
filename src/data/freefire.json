@@ -1,0 +1,141 @@
+[
+  {
+    "id": "ff-001",
+    "title": "Free Fire",
+    "subTitle": "Garena Free Fire - Diamond Topup",
+    "image": "https://i.ibb.co.com/TD8THYGf/freefire1.webp",
+    "price": "85 - 8500",
+    "reRecharge": [
+      { "id": "ff-d1", "dymond": "115 Diamonds", "price": "85" },
+      { "id": "ff-d2", "dymond": "240 Diamonds", "price": "165" },
+      { "id": "ff-d3", "dymond": "610 Diamonds", "price": "430" }
+    ],
+    "Rules": [
+      "Enter Player ID correctly",
+      "Region: Bangladesh only",
+      "Delivery time 5-30 mins",
+      "No refund for wrong ID"
+    ]
+  },
+  {
+    "id": "pubg-002",
+    "title": "PUBG Mobile",
+    "subTitle": "UC Global - Instant Activation",
+    "image": "https://i.ibb.co.com/1GTwbF5Q/freefire2.webp",
+    "price": "120 - 7500",
+    "reRecharge": [
+      { "id": "p-u1", "dymond": "60 UC", "price": "120" },
+      { "id": "p-u2", "dymond": "325 UC", "price": "600" },
+      { "id": "p-u3", "dymond": "660 UC", "price": "1150" }
+    ],
+    "Rules": [
+      "Character ID required",
+      "Global version supported",
+      "Safe & Secure",
+      "24/7 Support available"
+    ]
+  },
+  {
+    "id": "mlbb-003",
+    "title": "Mobile Legends",
+    "subTitle": "MLBB Diamond Topup (Direct)",
+    "image": "https://i.ibb.co.com/mCfQg0yH/freefire11.webp",
+    "price": "50 - 5000",
+    "reRecharge": [
+      { "id": "ml-d1", "dymond": "50 Diamonds", "price": "95" },
+      { "id": "ml-d2", "dymond": "250 Diamonds", "price": "450" },
+      { "id": "ml-d3", "dymond": "500 Diamonds", "price": "880" }
+    ],
+    "Rules": [
+      "User ID & Zone ID needed",
+      "Instant delivery",
+      "Double check Zone ID",
+      "Official recharge"
+    ]
+  },
+  {
+    "id": "codm-004",
+    "title": "Call of Duty Mobile",
+    "subTitle": "CP Topup - Garena/Global",
+    "image": "https://i.ibb.co.com/GvzSfB4S/freefire6.webp",
+    "price": "80 - 4000",
+    "reRecharge": [
+      { "id": "c-p1", "dymond": "80 CP", "price": "90" },
+      { "id": "c-p2", "dymond": "420 CP", "price": "450" },
+      { "id": "c-p3", "dymond": "880 CP", "price": "890" }
+    ],
+    "Rules": [
+      "Account Login or Player ID",
+      "Global & Garena supported",
+      "Screenshot required for login",
+      "Privacy guaranteed"
+    ]
+  },
+  {
+    "id": "coc-005",
+    "title": "Clash of Clans",
+    "subTitle": "Gold Pass & Gems",
+    "image": "https://i.ibb.co.com/mrLF4WHf/freefire5.webp",
+    "price": "550 - 9500",
+    "reRecharge": [
+      { "id": "c-g1", "dymond": "Gold Pass", "price": "650" },
+      { "id": "c-g2", "dymond": "500 Gems", "price": "550" },
+      { "id": "c-g3", "dymond": "1200 Gems", "price": "1100" }
+    ],
+    "Rules": [
+      "Supercell ID email needed",
+      "Log out during process",
+      "Wait for confirmation",
+      "Safe for account"
+    ]
+  },
+  {
+    "id": "val-006",
+    "title": "Valorant",
+    "subTitle": "Valorant Points (VP) - PC",
+    "image": "https://i.ibb.co.com/RkXW7H4m/freefire8.png",
+    "price": "450 - 12000",
+    "reRecharge": [
+      { "id": "v-p1", "dymond": "475 VP", "price": "480" },
+      { "id": "v-p2", "dymond": "1000 VP", "price": "950" },
+      { "id": "v-p3", "dymond": "2050 VP", "price": "1850" }
+    ],
+    "Rules": ["Riot ID with Tag", "Region: India/SEA", "Fast processing", "No password required"]
+  },
+  {
+    "id": "net-007",
+    "title": "Netflix",
+    "subTitle": "Premium UHD Subscription",
+    "image": "https://i.ibb.co.com/Y7Th9qcT/freefire7.webp",
+    "price": "250 - 1200",
+    "reRecharge": [
+      { "id": "n-s1", "dymond": "1 Profile (1 Month)", "price": "280" },
+      { "id": "n-s2", "dymond": "Full Account (1 Month)", "price": "1100" },
+      { "id": "n-s3", "dymond": "Shared Profile (Renewable)", "price": "250" }
+    ],
+    "Rules": [
+      "Email & Password delivery",
+      "No changing password",
+      "Single device only",
+      "Full month warranty"
+    ]
+  },
+  {
+    "id": "net-008",
+    "title": "Netflix",
+    "subTitle": "Premium Subscription",
+    "image": "https://i.ibb.co.com/LXzHXvpD/freefire10.webp",
+    "price": "250 - 1200",
+    "reRecharge": [
+      { "id": "n-s1", "dymond": "1 Profile (1 Month)", "price": "280" },
+      { "id": "n-s2", "dymond": "Full Account (1 Month)", "price": "1100" },
+      { "id": "n-s3", "dymond": "Shared Profile (Renewable)", "price": "250" }
+    ],
+    "Rules": [
+      "Email & Password delivery",
+      "No changing password",
+      "Single device only",
+      "Full month warranty"
+    ]
+  }
+]

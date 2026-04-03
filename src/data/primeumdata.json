@@ -1,0 +1,129 @@
+
+[
+  {
+    "id": "sub-001",
+    "title": "Netflix Premium",
+    "subTitle": "Ultra HD 4K + HDR",
+    "image": "https://i.ibb.co.com/Y7Th9qcT/freefire7.webp",
+    "price": "280 - 1200",
+    "reRecharge": [
+      { "id": "net-p1", "dymond": "1 Profile (1 Month)", "price": "280" },
+      { "id": "net-p2", "dymond": "2 Profile (1 Month)", "price": "550" },
+      { "id": "net-f1", "dymond": "Full Account (5 Screen)", "price": "1150" }
+    ],
+    "Rules": [
+      "No password change allowed",
+      "Use on single device only",
+      "Renewable account",
+      "Full month warranty"
+    ]
+  },
+  {
+    "id": "sub-002",
+    "title": "YouTube Premium",
+    "subTitle": "Ad-free & Background Play",
+    "image": "https://i.ibb.co.com/LXzHXvpD/freefire10.webp",
+    "price": "150 - 800",
+    "reRecharge": [
+      { "id": "yt-i1", "dymond": "Individual (1 Month)", "price": "180" },
+      { "id": "yt-f1", "dymond": "Family Plan (1 Month)", "price": "450" },
+      { "id": "yt-i6", "dymond": "Individual (6 Months)", "price": "850" }
+    ],
+    "Rules": [
+      "Email invite will be sent",
+      "No password required",
+      "Must not be in another family",
+      "Active on your own mail"
+    ]
+  },
+  {
+    "id": "sub-003",
+    "title": "Spotify Premium",
+    "subTitle": "Listen Without Ads",
+    "image": "https://picsum.photos/id/1015/600/600",
+    "price": "100 - 900",
+    "reRecharge": [
+      { "id": "sp-i1", "dymond": "Individual (1 Month)", "price": "150" },
+      { "id": "sp-d1", "dymond": "Duo Plan (1 Month)", "price": "250" },
+      { "id": "sp-f1", "dymond": "Family (1 Month)", "price": "350" }
+    ],
+    "Rules": [
+      "Provide Spotify Email/Pass",
+      "Region: Global/BD",
+      "Offline download enabled",
+      "High-quality audio"
+    ]
+  },
+  {
+    "id": "sub-004",
+    "title": "Canva Pro",
+    "subTitle": "Design Like a Pro",
+    "image": "https://picsum.photos/id/201/600/600",
+    "price": "50 - 500",
+    "reRecharge": [
+      { "id": "cv-m1", "dymond": "1 Month Access", "price": "70" },
+      { "id": "cv-m6", "dymond": "6 Month Access", "price": "250" },
+      { "id": "cv-y1", "dymond": "1 Year Access", "price": "450" }
+    ],
+    "Rules": [
+      "Join via Team Link",
+      "Access to Pro templates",
+      "No design limit",
+      "Instant activation"
+    ]
+  },
+  {
+    "id": "sub-005",
+    "title": "Prime Video",
+    "subTitle": "Amazon Original Series",
+    "image": "https://picsum.photos/id/237/600/600",
+    "price": "150 - 600",
+    "reRecharge": [
+      { "id": "pv-s1", "dymond": "Shared Profile (1 Month)", "price": "160" },
+      { "id": "pv-p1", "dymond": "Private Account (1 Month)", "price": "550" },
+      { "id": "pv-s6", "dymond": "6 Months Shared", "price": "750" }
+    ],
+    "Rules": [
+      "Valid on 1 device",
+      "Login credentials provided",
+      "Do not share login",
+      "Replacement warranty"
+    ]
+  },
+  {
+    "id": "sub-006",
+    "title": "Disney+ Hotstar",
+    "subTitle": "Movies & Cricket Live",
+    "image": "https://picsum.photos/id/180/600/600",
+    "price": "200 - 1500",
+    "reRecharge": [
+      { "id": "dh-s1", "dymond": "Super Plan (1 Year)", "price": "550" },
+      { "id": "dh-p1", "dymond": "Premium UHD (1 Month)", "price": "300" },
+      { "id": "dh-p12", "dymond": "Premium UHD (1 Year)", "price": "1450" }
+    ],
+    "Rules": [
+      "Indian Number OTP needed",
+      "Works on Smart TV/Mobile",
+      "Live sports included",
+      "Original Hotstar content"
+    ]
+  },
+  {
+    "id": "sub-007",
+    "title": "CapCut Pro",
+    "subTitle": "Professional Video Editor",
+    "image": "https://picsum.photos/id/251/600/600",
+    "price": "100 - 1200",
+    "reRecharge": [
+      { "id": "cp-m1", "dymond": "Monthly Subscription", "price": "250" },
+      { "id": "cp-y1", "dymond": "Annual Subscription", "price": "1100" },
+      { "id": "cp-t7", "dymond": "7-Day Trial Pack", "price": "100" }
+    ],
+    "Rules": [
+      "Account Login required",
+      "Unlock all Pro features",
+      "No watermark",
+      "Cloud storage included"
+    ]
+  }
+]

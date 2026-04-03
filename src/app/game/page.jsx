@@ -1,11 +1,12 @@
+import Game from '@/componets/layouts/game/Game';
 import React from 'react';
 
-const Game = () => {
+const GameCard = () => {
   return (
     <div>
-      <h1>Game</h1>
+      <Game></Game>
     </div>
   );
 };
 
-export default Game;
+export default GameCard;

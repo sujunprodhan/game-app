@@ -1,4 +1,3 @@
-// components/HeroBanner.tsx
 'use client';
 
 import { Calendar, ClockIcon } from 'lucide-react';
@@ -62,46 +61,3 @@ const HeroBanner = () => {
 };
 
 export default HeroBanner;
-
-  {
-    /* <div className="flex gap-3 items-center justify-center">
-          <span className="mt-4 text-sm md:text-lg text-gray-200">Action | Adventure | Sci-Fi</span>
-          <div className="flex gap-2 items-center  mt-4 font-semibold md:text-xl text-gray-200">
-            <Calendar className="w-4.5 h-4.5 text-pink-700" /> 2026
-          </div>
-          <div className="flex gap-2 items-center  mt-4 font-semibold md:text-xl text-gray-200">
-            <ClockIcon className="w-4.5 h-4.5 text-xl text-pink-700" /> 2h 8m
-          </div>
-        </div> */
-  }
-  {
-    /* <div className='flex justify-between'>
-          <div className='flex-1'>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Build Your Dream Website 🚀
-            </h1>
-
-            <p className="mt-4 text-sm md:text-lg text-gray-200">
-              Create modern, fast and scalable web apps using Next.js & Tailwind CSS.
-            </p>
-          </div>
-          <div className='flex-1'>
-            <h1>Hero Banner</h1>
-          </div>
-        </div> */
-  }
-
-  {
-    /* Buttons */
-  }
-  {
-    /* <div className="mt-6 flex gap-4">
-          <button className="px-6 py-2 bg-pink-600 hover:bg-pink-500 transition rounded-full font-medium">
-            Get Started
-          </button>
-
-          <button className="px-6 py-2 border border-white hover:bg-white hover:text-black transition rounded-full">
-            Learn More
-          </button>
-        </div> */
-  }

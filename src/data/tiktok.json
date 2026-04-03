@@ -1,0 +1,48 @@
+export const tiktokData = [
+  {
+    id: 'tt-coins',
+    title: 'TikTok Coins',
+    subTitle: 'Recharge TikTok Coins - Global',
+    image: 'https://res.cloudinary.com/dttbhoaxs/image/upload/v1773547346/samples/coffee.jpg',
+    price: '150 - 15000',
+    reRecharge: [
+      { dymond: '70 Coins', price: '150', id: 'tc-1' },
+      { dymond: '350 Coins', price: '700', id: 'tc-2' },
+    ],
+    Rules: ['Username required', 'Account must be public', 'Instant delivery'],
+  },
+  {
+    id: 'tt-likes',
+    title: 'TikTok Likes/Followers',
+    subTitle: 'High Quality Real Accounts',
+    image: 'https://res.cloudinary.com/dttbhoaxs/image/upload/v1773547343/samples/breakfast.jpg',
+    price: '50 - 5000',
+    reRecharge: [
+      { dymond: '1000 Followers', price: '450', id: 'tf-1' },
+      { dymond: '500 Likes', price: '200', id: 'tl-1' },
+    ],
+    Rules: ['Video/Profile Link needed', 'Do not private account', 'Life-time Refill'],
+  },
+  {
+    id: 'tt-views',
+    title: 'TikTok Views',
+    subTitle: 'Instant Video Views Booster',
+    image: 'https://res.cloudinary.com/dttbhoaxs/image/upload/v1773547344/samples/look-up.jpg',
+    price: '10 - 1000',
+    reRecharge: [
+      { dymond: '10k Views', price: '50', id: 'tv-1' },
+      { dymond: '50k Views', price: '200', id: 'tv-2' },
+    ],
+    Rules: ['Link must be correct', 'Public videos only'],
+  },
+  {
+    id: 'tt-comments',
+    title: 'TikTok Comments',
+    subTitle: 'Custom & Random Comments',
+    image:
+      'https://res.cloudinary.com/dttbhoaxs/image/upload/v1773547345/samples/man-on-a-street.jpg',
+    price: '100 - 2000',
+    reRecharge: [{ dymond: '50 Comments', price: '120', id: 'tm-1' }],
+    Rules: ['Enter link', 'Specify if custom text needed'],
+  },
+];

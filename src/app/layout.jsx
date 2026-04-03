@@ -4,6 +4,7 @@ import Navbar from '@/componets/layouts/navbar/Navbar';
 import Footer from '@/componets/layouts/footer/Footer';
 
 
+
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
@@ -25,11 +26,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <header>
           <Navbar></Navbar>
-          
-
         </header>
-      
-
         {children}
         <footer>
           <Footer></Footer>
