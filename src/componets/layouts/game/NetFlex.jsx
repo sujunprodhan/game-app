@@ -40,8 +40,8 @@ const NetFlex = () => {
           animating ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
         }`}
       >
-        {currentItems.map((item) => (
-          <NetFlexCard key={item.id} item={item} />
+        {currentItems.map((premium) => (
+          <NetFlexCard key={premium.id} premium={premium} />
         ))}
       </div>
 

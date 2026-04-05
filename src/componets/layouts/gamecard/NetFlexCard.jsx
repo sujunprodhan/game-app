@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
-const NetFlexCard = ({ item }) => {
-  const [selected, setSelected] = useState(item?.reRecharge?.[0]);
+const NetFlexCard = ({ premium }) => {
+  const [selected, setSelected] = useState(premium?.reRecharge?.[0]);
   return (
     <div
       className="relative container mx-auto rounded-2xl overflow-hidden group 
@@ -20,7 +20,7 @@ const NetFlexCard = ({ item }) => {
       {/* Image */}
       <div className="relative h-64 w-full overflow-hidden">
         <Image
-          src={item?.image}
+          src={premium?.image}
           alt="game image"
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -31,17 +31,17 @@ const NetFlexCard = ({ item }) => {
       {/* Content */}
       <div className="relative p-4 flex flex-col gap-2 z-10">
         {/* Title */}
-        <h2 className="text-white text-lg font-semibold tracking-wide">{item?.title}</h2>
+        <h2 className="text-white text-lg font-semibold tracking-wide">{premium?.title}</h2>
 
         {/* Subtitle */}
-        <p className="text-gray-400 text-sm">{item?.subTitle}</p>
+        <p className="text-gray-400 text-sm">{premium?.subTitle}</p>
 
         {/* Price */}
         <p className="text-pink-400 font-semibold text-sm mt-1">৳ {selected?.price}</p>
 
         {/* Recharge Options */}
         <div className="flex flex-wrap gap-2 mt-2">
-          {item?.reRecharge?.map((rechargeItem) => (
+          {premium?.reRecharge?.map((rechargeItem) => (
             <button
               key={rechargeItem.id}
               onClick={() => setSelected(rechargeItem)}
@@ -58,13 +58,13 @@ const NetFlexCard = ({ item }) => {
 
         {/* Rules */}
         <ul className="text-[11px] text-gray-400 mt-2 space-y-1">
-          {item?.Rules?.slice(0, 2).map((rule, i) => (
+          {premium?.Rules?.slice(0, 2).map((rule, i) => (
             <li key={i}>• {rule}</li>
           ))}
         </ul>
 
         {/* Button */}
-        <Link href={`/item/${item?.id}`}>
+        <Link href={`/premium/${premium?.id}`}>
           <button
             className=" mt-3 bg-linear-to-r from-pink-600 to-purple-600 
             hover:from-pink-700 hover:to-purple-700 

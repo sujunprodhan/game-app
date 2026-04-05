@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between px-5 sm:px-8 md:px-12 lg:px-16 xl:px-24 py-4 max-w-400 mx-auto ">
       {/* Logo */}
-      <Logo/>
+      <Logo />
 
       {/*  Desktop Menu */}
       <nav className="hidden md:flex items-center gap-6 px-6 py-2 rounded-full backdrop-blur bg-white/10 border border-gray-300/20">
@@ -47,9 +47,18 @@ const Navbar = () => {
       <div className="flex items-center gap-4">
         <SearchIcon className="hidden md:block w-6 h-6 cursor-pointer text-gray-700" />
 
-        <button className="px-4 py-1 sm:px-6 sm:py-2 bg-pink-600 text-white hover:bg-pink-500 transition rounded-full font-medium">
-          Login
-        </button>
+        <div className="hidden md:flex items-center gap-4">
+          <Link href="/login">
+            <button className="px-6 py-2 hover:bg-pink-800 bg-pink-600 text-white rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition duration-300">
+              Login
+            </button>
+          </Link>
+          <Link href="/register">
+            <button className="px-6 py-2 border border-pink-700 hover:bg-pink-800 hover:shadow-lg hover:shadow-pink-500/40 transition duration-300 text-white rounded-full">
+              Register
+            </button>
+          </Link>
+        </div>
 
         {/*  Hamburger */}
         <MenuIcon className="md:hidden w-6 h-6 cursor-pointer" onClick={() => setIsOpen(true)} />
@@ -84,7 +93,18 @@ const Navbar = () => {
         </nav>
 
         {/* Mobile Buttons */}
-        <button className="px-6 py-2 bg-pink-600 text-white rounded-full">Login</button>
+        <div className="flex flex-col items-center gap-4">
+          <Link href="/login">
+            <button className="px-6 py-2 hover:bg-pink-800 bg-pink-600 text-white rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition duration-300">
+              Login
+            </button>
+          </Link>
+          <Link href="/register">
+            <button className="px-6 py-2 border border-pink-700 hover:bg-pink-800 hover:shadow-lg hover:shadow-pink-500/40 transition duration-300 text-white rounded-full">
+              Register
+            </button>
+          </Link>
+        </div>
       </div>
     </header>
   );
