@@ -3,7 +3,7 @@ import React, { useState, useMemo } from 'react';
 import gameData from '@/data/freefire.json';
 import FreeFireCard from '../gamecard/FreeFireCard';
 
-const ITEMS_PER_PAGE =6;
+const ITEMS_PER_PAGE = 6;
 
 const Game = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -24,9 +24,9 @@ const Game = () => {
 
     setTimeout(() => {
       setCurrentPage(page);
-      setAnimating(false); 
+      setAnimating(false);
       window.scrollTo({ behavior: 'smooth' });
-    }, 300); 
+    }, 300);
   };
 
   return (

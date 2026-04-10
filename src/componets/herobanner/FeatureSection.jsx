@@ -1,10 +1,13 @@
-'use client'
+
 import { ArrowBigLeft, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
 import BlurCircle from '../blurecircle/BlurCircle';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/app/api/auth/[...nextauth]/route';
 
-const FeatureSection = () => {
+const FeatureSection = async () => {
+  const session = await getServerSession(authOptions)
   return (
     <div className=" mt-20 container mx-auto">
       <div className="flex justify-end max-w-400 mx-auto ">
@@ -19,7 +22,6 @@ const FeatureSection = () => {
           <ArrowRight className=" group-hover:translate-x-0.5 transition w-4.5 h-4.5 text-xl animate-pulse" />
         </button>
       </div>
-     
     </div>
   );
 };

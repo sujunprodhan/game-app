@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { MenuIcon, SearchIcon, X } from 'lucide-react';
 import Logo from '../logo/Logo';
 
+
 const navItems = [
   { name: 'Home', path: '/' },
   { name: 'Contact', path: '/contact' },
@@ -53,6 +54,7 @@ const Navbar = () => {
               Login
             </button>
           </Link>
+
           <Link href="/register">
             <button className="px-6 py-2 border border-pink-700 hover:bg-pink-800 hover:shadow-lg hover:shadow-pink-500/40 transition duration-300 text-white rounded-full">
               Register

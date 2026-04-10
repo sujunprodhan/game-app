@@ -26,8 +26,8 @@ const NetFlex = () => {
     setTimeout(() => {
       setCurrentPage(page);
       setAnimating(false);
-      window.scrollTo({ behavior:'smooth' });
-    }, 300); 
+      window.scrollTo({ behavior: 'smooth' });
+    }, 300);
   };
 
   return (

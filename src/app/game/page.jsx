@@ -1,4 +1,4 @@
-import Game from '@/componets/layouts/game/Game';
+import Game from '@/componets/game/Game';
 import React from 'react';
 
 const GameCard = () => {

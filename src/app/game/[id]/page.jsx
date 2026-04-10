@@ -1,13 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import gameData from '@/data/freefire.json';
-import PackageSelector from '@/componets/layouts/packageselector/PackageSelector';
-
+import PackageSelector from '@/componets/packageselector/PackageSelector';
 
 const GameDetails = async ({ params }) => {
   const { id } = await params;
   const game = gameData.find((g) => g.id === id);
-
 
   // Related Games
   const relatedGames = gameData
@@ -35,7 +33,7 @@ const GameDetails = async ({ params }) => {
 
             {/* Package Selector */}
             <div className="mt-10">
-              <PackageSelector packages={game?.reRecharge} type='game' />
+              <PackageSelector packages={game?.reRecharge} type="game" />
             </div>
             <div className="mt-12">
               <h3 className="text-2xl font-semibold text-white mb-5">Rules</h3>

@@ -1,9 +1,12 @@
+const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = process.env.MONGODB_URI;
 const dbName = process.env.DB_NAME;
-const collection = {
-  PRODUCTS: "products"
-}
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const collections = {
+  USERS: 'users',
+};
+
+
+
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
@@ -12,6 +15,6 @@ const client = new MongoClient(uri, {
   },
 });
 
-export const dbConnect =(cname)=>{
-  return client.db(dbName).collection(cname)
-}
+export const dbConnect = (uname) => {
+  return client.db(dbName).collection(uname);
+};

@@ -1,10 +1,12 @@
-'use client';
+'use client'
 
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Eye, EyeOff } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { signIn } from 'next-auth/react';
+import { redirect } from 'next/dist/server/api-utils';
 
 const LoginForm = () => {
   const {
@@ -15,8 +17,17 @@ const LoginForm = () => {
 
   const [showPass, setShowPass] = useState(false);
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+   const res = await signIn('credentials',{
+    email: data.email,
+    password: data.password,
+    redirect: false,
+   })
+   if(res.error){
+    alert('Invalid credentials')
+   } else{
+   window.location.href = '/'
+   }
   };
 
   return (
@@ -81,8 +92,7 @@ const LoginForm = () => {
 
           {/* Submit */}
           <button
-            type="submit"
-            className="w-full py-2 rounded-lg bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-white font-semibold shadow-md hover:shadow-pink-500/40 transition"
+            className="w-full py-2 rounded-lg bg-linear-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-white font-semibold shadow-md hover:shadow-pink-500/40 transition"
           >
             Login
           </button>

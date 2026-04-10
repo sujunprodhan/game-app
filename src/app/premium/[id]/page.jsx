@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import netData from '@/data/primeumdata.json';
-import PackageSelector from '@/componets/layouts/packageselector/PackageSelector';
+import PackageSelector from '@/componets/packageselector/PackageSelector';
 
 const PremiumDetails = async ({ params }) => {
   const { id } = await params;
 
- const premium = netData.find((p) => p.id.toString() === id);
+  const premium = netData.find((p) => p.id.toString() === id);
   // Related Products
   const relatedPremium = netData
     .filter((p) => p.id !== id)
@@ -20,7 +20,13 @@ const PremiumDetails = async ({ params }) => {
         <div className="flex flex-col lg:flex-row">
           {/* Image */}
           <div className="lg:w-1/2 relative aspect-video lg:aspect-auto">
-            <Image src={premium?.image} alt={premium.title} fill className="object-cover" priority />
+            <Image
+              src={premium?.image}
+              alt={premium.title}
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
 
           {/* Content */}
@@ -38,7 +44,7 @@ const PremiumDetails = async ({ params }) => {
 
             {/* Package Selector */}
             <div className="mt-10">
-              <PackageSelector packages={premium?.reRecharge} type='premium' />
+              <PackageSelector packages={premium?.reRecharge} type="premium" />
             </div>
 
             {/* Rules */}

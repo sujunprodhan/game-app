@@ -1,10 +1,9 @@
+import Game from '@/componets/game/Game';
+import NetFlex from '@/componets/game/NetFlex';
+import FeatureSection from '@/componets/herobanner/FeatureSection';
+import HeroBanner from '@/componets/herobanner/HeroBanner';
 
-import Game from "@/componets/layouts/game/Game";
-import NetFlex from "@/componets/layouts/game/NetFlex";
-import FeatureSection from "@/componets/layouts/herobanner/FeatureSection";
-import HeroBanner from "@/componets/layouts/herobanner/HeroBanner";
-import Video from "@/componets/layouts/video/Video";
-
+import Video from '@/componets/video/Video';
 
 export default function Home() {
   return (

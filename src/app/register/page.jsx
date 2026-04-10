@@ -1,4 +1,4 @@
-import RegisterForm from '@/componets/layouts/register/RegisterFrom';
+import RegisterForm from '@/componets/register/RegisterFrom';
 import React from 'react';
 
 const RegisterDetails = () => {
