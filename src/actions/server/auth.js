@@ -6,10 +6,12 @@ import bcrypt from 'bcryptjs';
 export const postUser = async (payload) => {
   const usersCollection = await dbConnect('users');
 
+
   const name = payload.get('name');
   const email = payload.get('email');
   const password = payload.get('password');
-  const imageFile = payload.get('image'); 
+  const imageFile = payload.get('image');
+
 
   //  check user exist
   const isExist = await usersCollection.findOne({ email });
@@ -25,7 +27,7 @@ export const postUser = async (payload) => {
 
   let imageUrl = '';
 
-  // IMAGE UPLOAD 
+  // IMAGE UPLOAD
   if (imageFile && imageFile.size > 0) {
     const imgForm = new FormData();
     imgForm.append('image', imageFile);
