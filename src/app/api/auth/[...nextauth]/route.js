@@ -3,13 +3,6 @@ import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import bcrypt from 'bcryptjs';
 
-
-
-const userList = [
-  { name: 'John Doe', password: 'password123' },
-  { name: 'Jane Smith', password: 'password456' },
-];
-
 export const authOptions = {
   providers: [
     CredentialsProvider({
@@ -22,19 +15,23 @@ export const authOptions = {
 
       async authorize(credentials, req) {
         const { email, password } = credentials;
-
-        // const user = userList?.find((u) => u.name == username);
+        console.log(email, password, 'auth js');
 
         // database
-        const user = await dbConnect('users').findOne({email})
+        const user = await dbConnect('users').findOne({ email });
         if (!user) {
           return null;
         }
-      const isPassword = await bcrypt.compare(password, user?.password)
-        if (isPassword) {
-          return user;
+        const isPassword = await bcrypt.compare(password, user?.password);
+        if (!isPassword) {
+          return null;
         }
-        return null;
+        return {
+          id: user._id.toString(),
+          name: user.name,
+          email: user.email,
+          image: user.image,
+        };
       },
     }),
   ],

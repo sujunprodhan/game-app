@@ -5,8 +5,6 @@ const collections = {
   USERS: 'users',
 };
 
-
-
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,

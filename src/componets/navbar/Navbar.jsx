@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { MenuIcon, SearchIcon, X } from 'lucide-react';
 import Logo from '../logo/Logo';
-
+import { signOut, useSession } from 'next-auth/react';
+import Image from 'next/image';
 
 const navItems = [
   { name: 'Home', path: '/' },
@@ -17,6 +18,8 @@ const navItems = [
 const Navbar = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const { data: session } = useSession();
+  const user = session?.user;
 
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between px-5 sm:px-8 md:px-12 lg:px-16 xl:px-24 py-4 max-w-400 mx-auto ">
@@ -49,17 +52,36 @@ const Navbar = () => {
         <SearchIcon className="hidden md:block w-6 h-6 cursor-pointer text-gray-700" />
 
         <div className="hidden md:flex items-center gap-4">
-          <Link href="/login">
-            <button className="px-6 py-2 hover:bg-pink-800 bg-pink-600 text-white rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition duration-300">
-              Login
-            </button>
-          </Link>
-
-          <Link href="/register">
-            <button className="px-6 py-2 border border-pink-700 hover:bg-pink-800 hover:shadow-lg hover:shadow-pink-500/40 transition duration-300 text-white rounded-full">
-              Register
-            </button>
-          </Link>
+          {user ? (
+            <>
+              <Image
+                src={session?.user?.image}
+                alt="user image"
+                width={40}
+                height={40}
+                className="border border-pink-800 rounded-full"
+              />
+              <button
+                onClick={() => signOut({ redirect: true , callbackUrl: '/'})}
+                className="px-6 py-2 border border-pink-700 hover:bg-pink-800 hover:shadow-lg hover:shadow-pink-500/40 transition duration-300 text-white rounded-full"
+              >
+                Logout
+              </button>
+            </>
+          ) : (
+            <>
+              <Link href="/login">
+                <button className="px-6 py-2 hover:bg-pink-800 bg-pink-600 text-white rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition duration-300">
+                  Login
+                </button>
+              </Link>
+              <Link href="/register">
+                <button className="px-6 py-2 border border-pink-700 hover:bg-pink-800 hover:shadow-lg hover:shadow-pink-500/40 transition duration-300 text-white rounded-full">
+                  Register
+                </button>
+              </Link>
+            </>
+          )}
         </div>
 
         {/*  Hamburger */}
@@ -96,12 +118,12 @@ const Navbar = () => {
 
         {/* Mobile Buttons */}
         <div className="flex flex-col items-center gap-4">
-          <Link href="/login">
+          <Link href="/login" onClick={() => setIsOpen(false)}>
             <button className="px-6 py-2 hover:bg-pink-800 bg-pink-600 text-white rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition duration-300">
               Login
             </button>
           </Link>
-          <Link href="/register">
+          <Link href="/register" onClick={() => setIsOpen(false)}>
             <button className="px-6 py-2 border border-pink-700 hover:bg-pink-800 hover:shadow-lg hover:shadow-pink-500/40 transition duration-300 text-white rounded-full">
               Register
             </button>
